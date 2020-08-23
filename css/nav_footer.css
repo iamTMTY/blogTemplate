@@ -1,30 +1,19 @@
 nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   background-color: white;
   color: #024192;
   position: relative;
   padding: 0px 50px;
   z-index: 2;
-  -webkit-box-shadow: 0px 0px 10px 0px rgba(2, 65, 146, 0.4);
-          box-shadow: 0px 0px 10px 0px rgba(2, 65, 146, 0.4);
+  box-shadow: 0px 0px 10px 0px rgba(2, 65, 146, 0.4);
 }
 
 .logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   text-transform: uppercase;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  align-items: flex-start;
 }
 
 .logo:hover {
@@ -42,15 +31,9 @@ nav {
 }
 
 .navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   padding: 10px 0;
   font-size: 20px;
 }
@@ -103,15 +86,9 @@ nav {
 
 footer {
   height: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background-color: #024192;
   color: white;
 }
