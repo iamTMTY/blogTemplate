@@ -1,0 +1,137 @@
+@import './presets';
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+body {
+    background-color: white;
+    color: black;
+    overflow-x: hidden;
+    font-family: 'Nunito', sans-serif;
+}
+
+// Article Page Style 
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+
+    button {
+        border: 2px solid transparent;
+        padding: 10px 20px;
+        background-color: $primary-color;
+        color: white;
+        border-radius: 3px;
+        margin: 50px 0 0;
+
+        &:hover {
+            cursor: pointer;
+            background-color: white;
+            color: $tertiary-color;
+            border: 2px solid $tertiary-color;
+        }
+    }
+}
+
+.post {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     width: 80vw;
+
+     img {
+         width: 70%;
+         height: auto;
+         margin: 20px 0;
+     }
+
+     h2 {
+         color: $primary-color;
+         width: 100%;
+         text-align: left;
+         margin: 30px 0 15px;
+         font-size: 20px;
+     }
+}
+
+.post-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+        width: 50vw;
+        height: auto;
+    }
+}
+
+.header-text {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: $primary-color;
+    margin-bottom: 10px;
+
+
+    h1 {
+        width: 65%;
+        font-size: 30px;
+    }
+
+    .date_author {
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        font-size: 20px;
+    }
+}
+
+.post-text {
+    text-justify: auto;
+    font-size: 18px;
+    line-height: 35px;
+    font-weight: 300;
+}
+
+
+@media (max-width: 800px) {
+    .header-text {
+
+        h1 {
+            font-size: 23px;
+        }
+
+        .date_author {
+            font-size: 15px;
+            font-weight: 400;
+        }
+    }   
+
+    .post-text {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 550px) {
+    .header-text {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+        h1 {
+            width: 100%;
+            font-size: 25px;
+        }
+
+        .date_author {
+            align-items: flex-start;
+        }
+    }
+}
