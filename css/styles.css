@@ -3,6 +3,7 @@
   padding: 0;
   margin: 0;
   outline: none;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -31,12 +32,6 @@ main {
   color: #024192;
 }
 
-.posts .post-start {
-  border: 1.5px solid crimson;
-  margin-bottom: 20px;
-  width: 100%;
-}
-
 .post {
   display: flex;
   flex-direction: column;
@@ -44,6 +39,7 @@ main {
   justify-items: center;
   margin: 0 2vw;
   padding: 50px 10px;
+  border-radius: 10px;
 }
 
 .post:hover {
@@ -140,6 +136,7 @@ main {
   display: flex;
   flex-direction: column;
   position: fixed;
+  z-index: 0;
   top: calc((100vh - 150px)/ 2);
   left: calc((7vw - 50px)/ 2);
 }
@@ -151,6 +148,9 @@ main {
   border-radius: 50%;
   border: 2px solid #024192;
   background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .social button img {
@@ -195,9 +195,16 @@ main {
     width: 30px;
     height: 30px;
   }
+  .social button img {
+    width: 15px;
+    height: 15px;
+  }
 }
 
 @media (max-width: 550px) {
+  main {
+    position: relative;
+  }
   .posts {
     margin: 20px 2vw;
   }
@@ -256,6 +263,10 @@ main {
     border-radius: 0;
     border: 1px solid #024192;
     background-color: white;
+  }
+  .social button img {
+    width: 20px;
+    height: 20px;
   }
   .social button:hover {
     cursor: pointer;

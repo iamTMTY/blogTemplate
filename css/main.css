@@ -61,12 +61,15 @@ nav {
 
 .navigation li button {
   background-color: #024192;
-  color: white;
   border: 2px solid transparent;
   padding: 10px 20px;
   border-radius: 3px;
   font-size: 15px;
   font-weight: 600;
+}
+
+.navigation li button a {
+  color: white;
 }
 
 .navigation li button:hover {
@@ -137,7 +140,214 @@ footer p {
 }
 
 .newsletter {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 3vw;
+  width: 95%;
+}
+
+.newsletter h2 {
+  color: #024192;
+}
+
+.newsletter form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px 15vw;
+  border-radius: 10px;
+  background-color: #e8eef7;
+}
+
+.newsletter form p {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.newsletter form div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.newsletter form div input {
+  padding: 8px 10px;
+  font-size: 17px;
+  border: 1px solid #024192;
+  margin-top: 2px;
+  border-radius: 3px;
+}
+
+.form-submit {
+  background-color: #024192;
+  color: white;
+  border: 2px solid transparent;
+  padding: 10px 20px;
+  border-radius: 3px;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.form-submit:hover {
+  cursor: pointer;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 6vw;
+}
+
+.about h2 {
+  color: #024192;
+  width: 100%;
+}
+
+.about p {
+  width: 50vw;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.about img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: crimson;
+  border: 1px solid #024192;
+}
+
+.about button {
+  background-color: #024192;
+  color: white;
+  border: 2px solid transparent;
+  padding: 10px 20px;
+  border-radius: 3px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.about button:hover {
+  cursor: pointer;
+}
+
+.contact {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  z-index: 4;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 0;
+  transition: all 1s ease;
+  overflow-y: scroll;
+}
+
+.contact .content {
+  height: max-content;
+  width: 70vw;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  padding: 40px 5vw;
+  position: relative;
+}
+
+.contact .content h2 {
+  color: #024192;
+}
+
+.contact .content .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: crimson;
+  font-size: 50px;
+  line-height: 0.5;
+  overflow: hidden;
+}
+
+.contact .content .close:hover {
+  cursor: pointer;
+}
+
+.contact .content form {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 2vw;
+  width: 50vw;
+  font-size: 15px;
+  box-shadow: 0px 0px 10px 0px rgba(2, 65, 146, 0.4);
+}
+
+.contact .content form p {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contact .content form .name_email {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10px;
+}
+
+.contact .content form .name_email div {
+  display: flex;
+  flex-direction: column;
+  width: 200%;
+  gap: 10px;
+}
+
+.contact .content form .name_email div input {
+  padding: 10px;
+  border: 1px solid #024192;
+  border-radius: 3px;
+  width: 100%;
+}
+
+.contact .content form .message {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.contact .content form .message textarea {
+  padding: 5px 5px;
+  border: 1px solid #024192;
+  border-radius: 3px;
+}
+
+.contact .content form .message textarea::placeholder {
+  text-align: center;
+}
+
+.contact .content form input[type="submit"] {
+  background-color: #024192;
+  border: 2px solid transparent;
+  padding: 10px 20px;
+  border-radius: 3px;
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  width: 100%;
+}
+
+.contact .content form input[type="submit"]:hover {
+  cursor: pointer;
 }
 
 @media (max-width: 800px) {
@@ -158,6 +368,19 @@ footer p {
   }
   .navigation li button {
     padding: 7px 10px;
+  }
+  .contact .content {
+    width: 80vw;
+  }
+  .contact .content form {
+    width: 60vw;
+  }
+  .about img {
+    width: 70px;
+    height: 70px;
+  }
+  .about p {
+    width: 70vw;
   }
 }
 
@@ -254,5 +477,23 @@ footer p {
   .form-submit:hover {
     cursor: pointer;
   }
+  .contact .content form {
+    font-size: 13px;
+  }
+  .contact .content form .name_email {
+    flex-direction: column;
+  }
+  .contact .content form .name_email div {
+    width: 100%;
+  }
 }
-/*# sourceMappingURL=nav_footer.css.map */
+
+@media (max-height: 600px) {
+  .contact {
+    align-items: flex-start;
+  }
+  .contact .content {
+    height: 100vh;
+  }
+}
+/*# sourceMappingURL=main.css.map */
