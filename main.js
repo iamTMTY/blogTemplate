@@ -19,8 +19,8 @@ menu.addEventListener('click', () => {
     } 
             
     if (navOpen) {
-        nav.style.top = '-100px'
-        nav.style.marginBottom = '-100px'
+        nav.style.top = '-110px'
+        nav.style.marginBottom = '-110px'
         menu.classList.add('nav-close')
         menu.classList.remove('nav-open')
         dashes[0].style.transform = 'rotate(0deg)'
