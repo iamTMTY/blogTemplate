@@ -125,17 +125,17 @@ nav {
 }
 
 .dash:nth-child(1) {
-    transition: all 1s ease;
+    transition: all .5s ease;
     top: 0px;
 }
 
 .dash:nth-child(2) {
     top: 8px;
-    transition: all 1s ease;
+    transition: all .5s ease;
 }
 
 .dash:nth-child(3) {
-    transition: all 1s ease;
+    transition: all .5s ease;
     bottom: 0px;
 }
 
@@ -162,6 +162,7 @@ footer {
 
 .section-start {
     border: 1.5px solid $tertiary-color;
+    background-color: $tertiary-color;
     margin-bottom: 20px;
     width: 100%;
 }
@@ -268,7 +269,7 @@ footer {
 // contact styles
 .contact {
     position: absolute;
-    height: 100vh;
+    height: 0;
     width: 100%;
     z-index: 4;
     left: 0;
@@ -277,9 +278,7 @@ footer {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    height: 0;
     transition: all 1s ease;
-    overflow-y: scroll;
 
 
     .content {
@@ -425,7 +424,7 @@ footer {
             width: 80vw;
 
             form {
-                width: 60vw;
+                width: 100%;
             }
         }
     }
@@ -559,9 +558,11 @@ footer {
     .contact {
 
         .content {
+            width: 100%;
             
             form {
                 font-size: 13px;
+                width: 100%;
 
                 .name_email {
                     flex-direction: column;
@@ -582,7 +583,11 @@ footer {
         align-items: flex-start;
 
         .content {
-            height: 100vh;
+            height: 100%;
+
+            form {
+                width: 100%;
+            }
         }
     }
 }

@@ -102,17 +102,17 @@ nav {
 }
 
 .dash:nth-child(1) {
-  transition: all 1s ease;
+  transition: all .5s ease;
   top: 0px;
 }
 
 .dash:nth-child(2) {
   top: 8px;
-  transition: all 1s ease;
+  transition: all .5s ease;
 }
 
 .dash:nth-child(3) {
-  transition: all 1s ease;
+  transition: all .5s ease;
   bottom: 0px;
 }
 
@@ -135,6 +135,7 @@ footer p {
 
 .section-start {
   border: 1.5px solid crimson;
+  background-color: crimson;
   margin-bottom: 20px;
   width: 100%;
 }
@@ -236,7 +237,7 @@ footer p {
 
 .contact {
   position: absolute;
-  height: 100vh;
+  height: 0;
   width: 100%;
   z-index: 4;
   left: 0;
@@ -245,9 +246,7 @@ footer p {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  height: 0;
   transition: all 1s ease;
-  overflow-y: scroll;
 }
 
 .contact .content {
@@ -373,7 +372,7 @@ footer p {
     width: 80vw;
   }
   .contact .content form {
-    width: 60vw;
+    width: 100%;
   }
   .about img {
     width: 70px;
@@ -477,8 +476,12 @@ footer p {
   .form-submit:hover {
     cursor: pointer;
   }
+  .contact .content {
+    width: 100%;
+  }
   .contact .content form {
     font-size: 13px;
+    width: 100%;
   }
   .contact .content form .name_email {
     flex-direction: column;
@@ -493,7 +496,10 @@ footer p {
     align-items: flex-start;
   }
   .contact .content {
-    height: 100vh;
+    height: 100%;
+  }
+  .contact .content form {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=main.css.map */

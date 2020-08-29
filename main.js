@@ -32,12 +32,14 @@ menu.addEventListener('click', () => {
 
 document.querySelectorAll('.pop_up').forEach(el => {
     el.addEventListener('click', () => {
-        let form = document.createElement('form')
-        // console.log(window.scrollY);
         document.querySelector('.contact').style.top = `${window.scrollY}px`
         document.querySelector('.contact').style.height = '100vh'
         document.querySelector('body').style.overflowY = 'hidden'
     })
+})
+
+window.addEventListener('scroll', () => {
+    document.querySelector('.contact').style.top = `${window.scrollY}px`
 })
 
 document.querySelector('.close').addEventListener('click', () => {
