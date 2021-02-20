@@ -9,7 +9,8 @@
 body {
   background-color: white;
   color: black;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
+  height: 100%;
 }
 
 main {
@@ -84,13 +85,16 @@ main {
   height: 190px;
 }
 
-.post-content img {
-  width: 320px;
+.post-content > div {
+  min-width: 300px;
   height: 100%;
-  border-radius: .5em;
+  border-radius: 0.5em;
+  background: url("../imgs/background.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
-.post-content .post-text {
+.post-text {
   margin-left: 20px;
   line-height: 1.4;
 }
@@ -137,8 +141,8 @@ main {
   flex-direction: column;
   position: fixed;
   z-index: 0;
-  top: calc((100vh - 150px)/ 2);
-  left: calc((7vw - 50px)/ 2);
+  top: calc((100vh - 150px) / 2);
+  left: calc((7vw - 50px) / 2);
 }
 
 .social button {
@@ -179,16 +183,16 @@ main {
   .post-content {
     height: 135px;
   }
-  .post-content img {
-    width: 240px;
+  .post-content > div {
+    min-width: 230px;
   }
   .post-content .post-text {
     font-size: 13px;
     line-height: 1.5;
   }
   .social {
-    top: calc((100vh - 105px)/ 2);
-    left: calc((7vw - 40px)/ 2);
+    top: calc((100vh - 105px) / 2);
+    left: calc((7vw - 40px) / 2);
   }
   .social button {
     margin: 2.5px 5px;
@@ -237,9 +241,11 @@ main {
   .post-content {
     flex-direction: column;
     height: auto;
+    align-items: center;
   }
-  .post-content img {
-    width: 100%;
+  .post-content > div {
+    width: 80%;
+    height: 50vw;
   }
   .post-content .post-text {
     margin: 5px 0;

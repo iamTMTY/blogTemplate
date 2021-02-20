@@ -10,7 +10,7 @@ menu.addEventListener('click', () => {
 
     if (!navOpen) {
         nav.style.top = '0'
-        nav.style.marginBottom = '0'
+        nav.style.marginBottom = '30px'
         menu.classList.remove('nav-close')
         menu.classList.add('nav-open')
         dashes[0].style.transform = 'rotate(34deg)'
@@ -20,7 +20,7 @@ menu.addEventListener('click', () => {
             
     if (navOpen) {
         nav.style.top = '-110px'
-        nav.style.marginBottom = '-110px'
+        nav.style.marginBottom = '-80px'
         menu.classList.add('nav-close')
         menu.classList.remove('nav-open')
         dashes[0].style.transform = 'rotate(0deg)'

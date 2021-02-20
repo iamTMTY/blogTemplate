@@ -43,7 +43,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 80vw;
+  width: 60vw;
 }
 
 .post img {
@@ -95,7 +95,7 @@ main {
 .post-text {
   text-justify: auto;
   font-size: 18px;
-  line-height: 35px;
+  line-height: 50px;
   font-weight: 300;
 }
 
